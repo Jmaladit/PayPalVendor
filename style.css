@@ -1,0 +1,86 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, ol, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+}
+
+.header {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p, .content ol, .content ul {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.content label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="image"] {
+    width: 150px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+}

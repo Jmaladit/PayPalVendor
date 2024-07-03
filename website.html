@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card Promotion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gift Card Promotion</h1>
+            <h2>Get a $10,000 Gift Card for only $1,000!</h2>
+        </div>
+        <div class="content">
+            <p><strong>Special Limited Time Offer</strong></p>
+            <p>You can now receive a $10,000 gift card for a purchase of just $1,000. This is an exclusive promotion available for a limited time. Start with as little as $250 and increase your transaction for even greater rewards!</p>
+            
+            <h3>How It Works:</h3>
+            <ol>
+                <li>Select Your Amount: Choose the amount you wish to pay.</li>
+                <li>Complete the Transaction: Make your payment securely via PayPal.</li>
+                <li>Receive Your Gift Card: Once the payment is confirmed, you will receive your gift card.</li>
+            </ol>
+            
+            <h3>Payment Options:</h3>
+            <ul>
+                <li>Pay $250 to receive a $2,500 Gift Card</li>
+                <li>Pay $500 to receive a $5,000 Gift Card</li>
+                <li>Pay $1,000 to receive a $10,000 Gift Card</li>
+                <li>Pay $2,500 to receive a $25,000 Gift Card</li>
+                <li>Pay $5,000 to receive a $50,000 Gift Card</li>
+            </ul>
+            
+            <h3>Terms and Conditions:</h3>
+            <ul>
+                <li>This promotion is valid for a limited time and subject to availability.</li>
+                <li>Payments are non-refundable once the gift card has been issued.</li>
+                <li>Ensure your PayPal account is verified and in good standing.</li>
+            </ul>
+
+            <h3>Book Your Gift Card Now!</h3>
+            
+            <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" id="hosted_button_id" value="">
+
+                <label for="amount">Select Amount:</label>
+                <select id="amount" name="amount">
+                    <option value="250">Pay $250 to receive a $2,500 Gift Card</option>
+                    <option value="500">Pay $500 to receive a $5,000 Gift Card</option>
+                    <option value="1000">Pay $1,000 to receive a $10,000 Gift Card</option>
+                    <option value="2500">Pay $2,500 to receive a $25,000 Gift Card</option>
+                    <option value="5000">Pay $5,000 to receive a $50,000 Gift Card</option>
+                </select>
+                
+                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
